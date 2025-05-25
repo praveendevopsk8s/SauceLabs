@@ -24,4 +24,3 @@ Scenario: Stores the given item's name and price tag to a file
 #    And the user adds the '${itemName}' to the cart
 #    And the user stores the cart item into  ${cartItem}
 #    Should Be Equal As Strings    ${cartItem}  ${itemName}
-
