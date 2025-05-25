@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.12.4 on win32)" generated="20250525 07:08:30.113" rpa="false" schemaversion="2">
+<suite id="s1" name="Fourth" source="C:\Projects\prpl\Prpl_Automation_Code_Base\Learnings\SampleCode\saucelabs\feature\fourth.robot">
+<test id="s1-t1" name="Scenario: Stores the given item's name and price tag to a file">
+<kw name="the user logs-in to the website" library="Login_Logout" type="SETUP">
+<msg timestamp="20250525 07:08:32.443" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg timestamp="20250525 07:08:33.322" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg timestamp="20250525 07:08:33.427" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg timestamp="20250525 07:08:33.503" level="INFO">Clicking button 'id:login-button'.</msg>
+<status status="PASS" starttime="20250525 07:08:30.352" endtime="20250525 07:08:33.579"/>
+</kw>
+<kw name="Given the user stores the price of the item '${itemName}' into 'itemPrice'" library="Login_Logout" sourcename="the user stores the price of the item '${itemName}' into '${itemPrice}'">
+<doc>Reads the item name from the command line and stores the price into 'itemPrice' variable
+:param itemName: name of the item whose price has to be read is passed through cli
+:param price: Stores the item's price, makes it as a global variable</doc>
+<msg timestamp="20250525 07:08:33.580" level="INFO">Clicking element 'xpath=//div[text()='Sauce Labs Backpack']'.</msg>
+<msg timestamp="20250525 07:08:33.678" level="INFO">Prints the item name Sauce Labs Backpack</msg>
+<status status="PASS" starttime="20250525 07:08:33.580" endtime="20250525 07:08:33.678"/>
+</kw>
+<kw name="the user logs-out from the website" library="Login_Logout" type="TEARDOWN">
+<msg timestamp="20250525 07:08:43.680" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<msg timestamp="20250525 07:08:53.743" level="INFO">Clicking element 'id:logout_sidebar_link'.</msg>
+<status status="PASS" starttime="20250525 07:08:33.679" endtime="20250525 07:08:56.336"/>
+</kw>
+<status status="PASS" starttime="20250525 07:08:30.352" endtime="20250525 07:08:56.336"/>
+</test>
+<doc>Opens the website: https://www.saucedemo.com/
+Stores the first item name and price tag to a file
+Adds the item to the cart
+Verifies whether correct item has been added to the cart</doc>
+<status status="PASS" starttime="20250525 07:08:30.113" endtime="20250525 07:08:56.336"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Fourth">Fourth</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
