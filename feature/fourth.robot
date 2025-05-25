@@ -9,7 +9,7 @@ Library        ../library/steps/Login_Logout.py
 #Resource        ../library/resources/CDRouter_Precondition.robot
 
 Test Setup    the user logs-in to the website
-Test Teardown    the user logs-out from the website
+#Test Teardown    the user logs-out from the website
 
 *** Variables ***
 ${fileName}   itemsDetails.txt
